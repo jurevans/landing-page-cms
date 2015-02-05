@@ -1,0 +1,44 @@
+{% extends "lpg.html" %}
+
+{% block main %}
+
+
+<div class="grid_12">
+		<a href="/{{ landingpage.url }}"><img src="/media/{{ landingpage.logo.url }}" alt="{{ landingpage.title }}" /></a>
+	</div><div class="clear">&nbsp;</div>
+	<div class="grid_12">
+		<h1>{{ landingpage.heading }}</h1>
+	</div><div class="clear">&nbsp;</div>
+	
+	<div id="content" class="grid_12">
+		<div class="grid_12 alpha omega">
+			{{ landingpage.body|safe }}	
+		</div><div class="clear">&nbsp;</div>
+		<div class="grid_6 alpha">
+			<div id="media">
+		{% if landingpage.add_media %}
+		    {% ifequal landingpage.add_media 'P' %}
+			{% if landingpage.photo %}
+			<img src="/media/{{ landingpage.photo.url }}" alt="" />
+			{% endif %}
+		    {% endifequal %}
+		    {% ifequal landingpage.add_media 'E' %}
+			{% if landingpage.embed_media %}
+			    {{ landingpage.embed_media|safe }}
+			{% endif %}
+		     {% endifequal %}
+		{% endif %}
+		    </div>
+		</div>
+		<div class="grid_6 omega">
+		   
+			<div id="form">
+			    {{ landingpage.call_to_action_form|safe }}
+			</div>
+			
+		</div><div class="clear">&nbsp;</div>
+		
+
+	</div><div class="clear">&nbsp;</div>
+
+{% endblock %}

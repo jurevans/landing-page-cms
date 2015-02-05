@@ -1,0 +1,34 @@
+{% extends "admin/base.html" %}
+{% load i18n %}
+
+{% block title %}{{ title }} | {% trans 'Landing Page Generator' %}{% endblock %}
+{% block extrastyle %}
+<link rel="icon" href="/media/images/favicon.ico" type="image/x-icon" />
+<style>
+
+#header{ background: url('/media/images/bodyBgTile.png') top left repeat; border-bottom: solid 3px #999; }
+
+#branding h1{ color: #fff; }
+.module h2, .module caption, .inline-group h2 { background:#ccc url(/admin_media/img/admin/nav-bg.gif) bottom left repeat-x; color: #333940; }
+
+a:link,
+a:active,
+a:visited
+{
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover
+{
+    text-decoration: underline;
+}
+
+a.section:link, a.section:visited { color: #666666; }
+</style>
+{% endblock %}
+{% block branding %}
+<h1 id="site-name">{% trans 'Landing Page Generator' %}</h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}

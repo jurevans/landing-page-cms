@@ -1,0 +1,64 @@
+
+{% block form %}
+
+{% ifequal landingpage.form 'C'  %}
+{# Contact #}
+<form action="http://www.addresstwo.com/cf/function_addaccount.asp" method=post style="padding: 0px 0px 0px 0px">
+<script>function clearText(thefield){if (thefield.defaultValue==thefield.value) thefield.value = ""}</script>
+<input type="hidden" name="txtUID" value="sandbox">
+<script type="text/javascript">
+document.write('<input type=hidden name=txtRedirect value="_' + location.href + '">');
+</script>
+<table width="450" cellpadding=0 cellspacing=0 border=0>
+			
+    <tr><td align=right valign=top style="font-family: verdana, helvetica; font-size: 10pt">Name:  </td><td><select name="txtContactSalutation" style="font-family: verdana, helvetica; font-size: 10pt"><option>Mr.</option><option>Mrs.</option><option>Ms.</option><option>Dr.</option></select><input type="text" name="txtContactFirstName" value="First" size=10 onFocus="clearText(this)" ><input type="text" name="txtContactLastName" value="Last" size=10 onFocus="clearText(this)" ></td></tr>
+    <tr><td align=right valign=top style="font-family: verdana, helvetica; font-size: 10pt">Company:  </td><td><input type="text" name="txtAccountName" size=34></td></tr>
+    <tr><td align=right valign=top style="font-family: verdana, helvetica; font-size: 10pt">Address:  </td><td><input type="text" name="txtAccountAddress1" size=34 ></td></tr>
+    <tr><td align=right valign=top style="font-family: verdana, helvetica; font-size: 10pt"></td><td><input type="text" name="txtAccountAddress2" size=34 ></td></tr>
+    <tr><td align=right valign=top style="font-family: verdana, helvetica; font-size: 10pt">City:  </td><td><input type="text" name="txtAccountCity" size=34 ></td></tr>
+    <tr><td align=right valign=top style="font-family: verdana, helvetica; font-size: 10pt">State:  </td><td><input type="text" name="txtAccountState" size=34 maxlength=2></td></tr>
+    <tr><td align=right valign=top style="font-family: verdana, helvetica; font-size: 10pt">Zip Code:  </td><td><input type="text" name="txtAccountZip" size=34 maxlength=5></td></tr>
+    <tr><td align=right valign=top style="font-family: verdana, helvetica; font-size: 10pt">Phone1:  </td><td><input type="text" name="txtContactPhone1" size=34></td></tr>
+    <tr><td align=right valign=top style="font-family: verdana, helvetica; font-size: 10pt">Email:  </td><td><input type="text" name="txtContactEmail" size=34></td></tr>
+    <tr><td align=right valign=top style="font-family: verdana, helvetica; font-size: 10pt">Opt-In:  </td><td style="font-family: verdana, helvetica; font-size: 10pt"><input type="checkbox" name="txtContactOptIn" value="checked" checked>Please keep me updated with emails.</td></tr>
+    <tr><td align=right valign=top style="font-family: verdana, helvetica; font-size: 10pt">Message:  </td><td style="font-family: verdana, helvetica; font-size: 10pt"><textarea name="txtMessage" rows=4 cols=25></textarea></td></tr>
+    <tr><td align=right valign=top style="font-family: verdana, helvetica; font-size: 10pt">  </td><td style="font-family: verdana, helvetica; font-size: 10pt"><input type="submit" name="submit" value="Submit"> <font size=1>Powered By: <a href="http://www.addresstwo.com" target="_blank"><img src="http://www.addresstwo.com/images/carter_logo_foremail.jpg" border="0" alt="Simple CRM for Small Business and Network Marketers"></a></font></td></tr>
+                    
+</table>
+</form>
+
+{% endifequal %}
+
+{% ifequal landingpage.form 'A' %}
+{# AWeber #}
+<script type="text/javascript" src="http://forms.aweber.com/form/15/2085824215.js"></script>
+
+<center><form method="post" action="http://www.aweber.com/scripts/addlead.pl">
+<input type="hidden" name="meta_web_form_id" value="2085824215">
+<input type="hidden" name="meta_split_id" value="">
+<input type="hidden" name="unit" value="freecdcustomers">
+<input type="hidden" name="redirect" value="http://www.selfstorageinvesting.com/freedownload.html" id="redirect_52b78821d85c16c1dde5a772cac1fef2">
+<input type="hidden" name="meta_redirect_onlist" value="">
+<input type="hidden" name="meta_adtracking" value="">
+<input type="hidden" name="meta_message" value="1">
+<input type="hidden" name="meta_required" value="from">
+<input type="hidden" name="meta_forward_vars" value="0">
+<table>
+<tr><td colspan=2><center></center></td></tr>
+<tr><td>Name:</td><td><input type="text" name="name" value="" size="20"></td></tr>
+<tr><td>Email:</td><td><input type="text" name="from" value="" size="20"></td></tr>
+    <tr><td colspan=2><center></center></td></tr>
+<tr><td align="center" colspan="2"><input type="submit" name="submit" value="Submit"></td></tr>
+</table>
+</form>
+
+<img src="http://forms.aweber.com/form/displays.htm?id=TAwcrBxMLEyMrA==" border="0" />
+</center>
+{% endifequal %}
+
+{% ifequal landingpage.form 'F' %}
+{# FormSpring #}
+<script type="text/javascript" src="http://www.formspring.com/forms/js.php?513963-1riQnPmg0t-v2"></script><noscript><a href="http://www.formspring.com/forms/?513963-1riQnPmg0t" title="Online Form">Online Form - Trial</a></noscript><div style="text-align:right; font-size:x-small;"><a href="http://www.formspring.com/" title="Web Form Generator">FormSpring - Web Form Generator</a></div>
+{% endifequal  %}
+
+{% endblock %}

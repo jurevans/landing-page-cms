@@ -1,0 +1,35 @@
+
+
+#main {
+    background-color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    border-top: 1px solid #666;
+}
+
+#footer p a,
+#footer p a:link,
+#footer p a:active,
+#footer p a:visited
+{
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+#footer p a:hover
+{
+    text-decoration: underline;
+}
+
+#media img
+{
+    display: block;
+    margin: 0 auto 10px auto;
+}

@@ -1,0 +1,40 @@
+from django.db import models
+from datetime import datetime
+from django.contrib.auth.models import User
+
+'''
+Define user permissions and groups. Assume multiple editors per group
+for managing Landing Page content
+'''
+
+class Editors(models.Model):
+    person = models.ForeignKey('Person')
+    group = models.ForeignKey('Group')
+    date_joined = models.DateTimeField(default=datetime.now)
+    
+    def __unicode__(self):
+        return "%s is a member of %s" % (self.person.name, self.group.name)
+
+class UserEditors(models.Model):
+    user = models.ForeignKey(User)
+    group = models.ForeignKey('Group')
+    date_joined = models.DateTimeField(default=datetime.now)
+    
+    def __unicode__(self):
+        return "%s is a user and member of %s" % (self.user.username, self.group.name)
+
+class Person(models.Model):
+    name = models.CharField(max_length=128)
+    email = models.CharField(max_length=128)
+
+    def __unicode__(self):
+        return self.name
+
+class Group(models.Model):
+    name = models.CharField(max_length=128)
+    # Membership object defined as a class
+    members = models.ManyToManyField(Person, through=Editors)
+    user_members = models.ManyToManyField(User, through='UserEditors')
+    
+    def __unicode__(self):
+        return self.name
