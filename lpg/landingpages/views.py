@@ -10,7 +10,7 @@ from django.http import HttpResponseRedirect
 from django.http import Http404
 
 def index(request):
-    if request.META.get('SERVER_NAME') == 'valetleads.com': # Think about adding the Site object here!
+    if request.META.get('SERVER_NAME') == 'somedomain.com': # Think about adding the Site object here, or make this a Setting
         return render_to_response('index.html')
     else:
         return HttpResponseRedirect('/accounts/login/')
