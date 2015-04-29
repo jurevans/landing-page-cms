@@ -32,9 +32,9 @@ with an exposed REST API for some extended functionality if the need is there.
 allowing users to configure a service such as Yahoo Commerce, Paypal, etc., for quick purchases. While the landing page is targeted to businesses for promotion, it would be nice to be able to use this framework for creating a one-off page with
 an embedded E-Commerce component (an example might be a landing page which, while is promotional, might be promoting
 something such as a book or other media that is specific to the business' campaign, allowing users to shop within the
-context of the landing page itself, keeping all promotion and purchases related to that promotion centralized. As links
-to larger E-Commerce sites might prove useful (e.g., View on Amazon), the ability to embed the E-Commerce component might
-be kinda sweet.
+context of the landing page itself, keeping all promotion and purchases related to that promotion centralized). While links and widgets that direct customers
+to larger E-Commerce sites might prove useful (e.g., View on Amazon), the ability to embed the E-Commerce 
+functionality more directly might be kinda sweet.
 * Integrate ANALYTICS!!! Not sure if this was done. It's been over 6 years. When building a page, a user should be able to add tracking code for events and page views at the very least!
 * And so, so much more... In writing this, I almost feel obligated to implement the above and open a new repository to
 share with the world.
