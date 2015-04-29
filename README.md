@@ -11,6 +11,7 @@ It is merely illustrative of older Django
 mechanisms and serves more as a scaffold for a future rewrite. Originally developed in 2008, and needless to say, much can be done to 
 bring it up to par with the
 current version of Django as of this writing (1.8), something I may do in a separate repo. 
+
 Considering the number of changes in
 the Django framework, Python, HTML5/CSS3, etc., this project could be rewritten to incorporate new features and to avoid
 deprecated features. Examples of improvements include, but are not limited to, the following:
