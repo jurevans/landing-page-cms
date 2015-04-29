@@ -18,8 +18,12 @@ deprecated features. Examples of improvements include, but are not limited to, t
 
 * Update templates to HTML5
 * 960.gs was and is nice, however, I would use Bootstrap for base grid, form, and widget styles
-* It wouldn't hurt to have a "composer.json" file declaring dependancies within the "public" or "static" domain, along 
-with a declaration of "pip" dependencies for installation within "virtualenv" or deployment to a Web server
+* It would be nice to utilize "composer" and "bower" for declaring dependancies within the project, along with
+the declaration of "site-packages" for dependencies installed in "virtualenv" environment, for deployment to a staging and live server... Portability
+with Virtualenv is a beautiful thing.
+* Since we already decided that we are going to use "composer" and "bower", we may as well install a taskrunner such
+as "grunt" for running tests, "linting" and minimizing JavaScript and CSS, executing server commands that might be useful
+in development, etc.
 * A base JavaScript library would be a nice touch. In fact, for the generated Landing Pages themselves, 
 Single Page Application 
 (SPA) functionality could be integrated based on features selected and implemented, allowing some kind of dynamic behavior
