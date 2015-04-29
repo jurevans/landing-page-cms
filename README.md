@@ -6,7 +6,6 @@ own HTML landing page which may be published to a sub-domain.
 The Django Admin has been heavily modified to export some functionality to Users. This incorporates the account sign-up
 and approval process, and allows the Registered User to manage their account using tools based on the Admin.
 
-```
 NOTE: This project is not up-to-date with more recent standards, nor is it being maintained by any means. 
 It is merely illustrative of older Django
 mechanisms and serves more as a scaffold for a future rewrite. Originally developed in 2009, much can be done to 
@@ -39,5 +38,4 @@ be kinda sweet.
 * And so, so much more... In writing this, I almost feel obligated to implement the above and open a new repository to
 share with the world.
 
-```
 
