@@ -1,8 +1,8 @@
-<p><strong>Thank you for registering with ValetLeads.com!</strong></p>
+<p><strong>Thank you for registering!</strong></p>
 
-<p>Click  <a href="http://lpg.getvisualblaze.com/accounts/activate/{{ activation_key }}">here</a> to activate your account</p>
+<p>Click  <a href="http://app.domain.com/accounts/activate/{{ activation_key }}">here</a> to activate your account</p>
      
 <p>
-You have {{ expiration_days }} to confirm your account with ValetPages.com
+You have {{ expiration_days }} to confirm your account with App.Domain.com
 </p>                                         
 
