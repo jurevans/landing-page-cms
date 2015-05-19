@@ -1,4 +1,4 @@
-***Landing Page Generator, version 0.0***
+***Landing Page Generator, version 0.0.1***
 
 In this project, users may register for access (to be approved by the Administrator) to develop, draft and publish their
 own HTML landing page which may be published to a sub-domain.
